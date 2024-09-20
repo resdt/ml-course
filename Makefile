@@ -8,7 +8,7 @@ venv-win:
 
 # Install requirements
 install-reqs: venv
-	. venv/bin/activate && venv\Scripts\python.exe -m pip install --upgrade pip
+	. venv/bin/activate && python -m pip install --upgrade pip
 	. venv/bin/activate && pip install -r requirements.txt
 install-reqs-win: venv-win
 	.\venv\Scripts\activate && venv\Scripts\python.exe -m pip install --upgrade pip
